@@ -234,7 +234,7 @@ docker_run_nodes()
 
 generate_genesis_block()
 {
-    printfl "Generating Genesis Block"
+    printfl "Generating Genesis Blocks"
     mkdir -p "${COIN_DIR}"
     if [ ! -d "${COIN_DIR}/GenesisH0" ]; then
         (
@@ -290,7 +290,7 @@ generate_genesis_block()
 
 newcoin_replace_vars()
 {
-    printfl "Forging '${COIN_NAME_LOWER}' coin"
+    printfl "Forking '${COIN_NAME_LOWER}' coin"
     mkdir  -p "${COIN_DIR}"
     if [ -d "${COIN_DIR}/${COIN_NAME_LOWER}" ]; then
         printfs "Warning: ${COIN_DIR}/${COIN_NAME_LOWER} already exists. Not replacing any values"
